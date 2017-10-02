@@ -19,15 +19,15 @@ buildscript {
 plugins {
   id 'java'
   id 'application'
-  id 'com.github.johnrengelman.shadow' version '1.2.3'
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'com.github.johnrengelman.shadow'
 
 sourceCompatibility = '1.8'
 
 mainClassName = 'io.vertx.core.Launcher'
-def mainVerticleName = 'com.az.modauth.MainVerticle'
+def mainVerticleName = 'com.az.common.service.MainVerticleServiceCommons'
 
 repositories {
   jcenter()
@@ -38,15 +38,16 @@ repositories {
 dependencies {
   compile "io.vertx:vertx-core:$vertx_version"
   compile "io.vertx:vertx-web:$vertx_version"
+
+  compile "io.vertx:vertx-rx-java:$vertx_version"
   compile "io.vertx:vertx-auth-oauth2:$vertx_version"
+  compile "io.vertx:vertx-config:$vertx_version"
 
 
   testCompile "junit:junit:4.12"
   testCompile "io.vertx:vertx-unit:$vertx_version"
   compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
   compile "org.jetbrains.kotlin:kotlin-runtime:$kotlin_version"
-
-  compile project(":service-commons")
 }
 
 // Redeploy watcher.

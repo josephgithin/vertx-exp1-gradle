@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-commons.iml" filepath="$PROJECT_DIR$/.idea/modules/service-commons.iml" group="service-commons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-commons/service-commons_main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-commons/service-commons_main.iml" group="service-commons" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-commons/service-commons_test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-commons/service-commons_test.iml" group="service-commons" />
       <module fileurl="file://$PROJECT_DIR$/vertx-exp1-gradle.iml" filepath="$PROJECT_DIR$/vertx-exp1-gradle.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/vertx-exp1-gradle_main.iml" filepath="$PROJECT_DIR$/.idea/modules/vertx-exp1-gradle_main.iml" group="vertx-exp1-gradle" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/vertx-exp1-gradle_test.iml" filepath="$PROJECT_DIR$/.idea/modules/vertx-exp1-gradle_test.iml" group="vertx-exp1-gradle" />
